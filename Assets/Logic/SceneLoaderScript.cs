@@ -12,4 +12,8 @@ public class SceneLoaderScript : MonoBehaviour
         SceneManager.LoadScene(++currentSceneIndex);
     }
 
+    public void StartMenuLoader()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
