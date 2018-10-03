@@ -9,6 +9,7 @@ public class NumberWizard : MonoBehaviour
     [SerializeField] int max;
     [SerializeField] int min;
     [SerializeField] Text guessText;
+    [SerializeField] Text headingText;
 
     int guess;
 
@@ -19,28 +20,27 @@ public class NumberWizard : MonoBehaviour
 
     public void StartGame()
     {
-        max = ++max;
-        guess = Random.Range(min, max);
+        guess = Random.Range(min, ++max);
         guessText.text = guess.ToString();
+        headingText.text = ("Guess number between " + min + " and " + max);
     }
 
     public void OnPressHigher()
     {
-        min = guess;
+        min = ++guess;
         NextGuess();
-        guessText.text = guess.ToString();
     }
 
     public void OnPressLower()
     {
-        max = guess;
+        max = --guess;
         NextGuess();
-        guessText.text = guess.ToString();
     }
 
     public void NextGuess()
     {
         guess = (max + min) / 2;
+        guessText.text = guess.ToString();
     }
 }
 

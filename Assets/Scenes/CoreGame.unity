@@ -466,7 +466,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Guess number between 0 and 1000
+  m_Text: 
 --- !u!222 &421722744
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -654,6 +654,7 @@ MonoBehaviour:
   max: 1000
   min: 1
   guessText: {fileID: 2069941292}
+  headingText: {fileID: 421722743}
 --- !u!4 &1042301482
 Transform:
   m_ObjectHideFlags: 0
@@ -1542,8 +1543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0099182, y: 131.25}
-  m_SizeDelta: {x: 170.6, y: 78}
+  m_AnchoredPosition: {x: 1.99, y: 131.25}
+  m_SizeDelta: {x: 174.59, y: 78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2069941292
 MonoBehaviour:
@@ -1577,7 +1578,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ???
+  m_Text: 
 --- !u!222 &2069941293
 CanvasRenderer:
   m_ObjectHideFlags: 0
